@@ -328,12 +328,12 @@ Exporter.prototype.buildEmbeddedCSS = function(artboardSet) {
 }
 
 Exporter.prototype.getArtboardImageName = function(artboard, scale) {
-  var suffix = scale == 2 ? "@2x" : ""
+  var suffix = scale == 2 ? "2x" : ""
   return Utils.toFilename(artboard.name(), false) + suffix + ".png"
 }
 
 Exporter.prototype.getMobileMenuImageName = function(artboard, scale) {
-  var suffix = scale == 2 ? "@2x" : ""
+  var suffix = scale == 2 ? "2x" : ""
   return Utils.toFilename(artboard.name(), false) + "_mobile_menu" + suffix + ".png"
 }
 
